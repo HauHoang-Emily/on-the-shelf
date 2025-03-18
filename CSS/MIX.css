@@ -1,0 +1,409 @@
+.EHtop {
+    height: 135px;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: -135px;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 0 163px;
+    box-shadow: 0 5px 7px -2px rgb(0 0 0 / 0.3);
+}
+
+.MKmass {width: 200px;}
+.MKimage {width: 120px; margin-bottom: 4px;}
+.MKimage:hover {filter: brightness(70%);}
+#MKtable {padding: 50px; margin: 0 auto;}
+.MKbutton {padding: 13px 30px; background-color: #727E74; border-radius: 0%; color: white; border-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+.MKtitle {height: 60px; font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif;}
+.MKtitle:hover {text-decoration: underline;}
+.MKprice {margin-bottom: 25px; font-size: 14px}
+#MKlist {text-align: center;}
+#MKpagetitle {padding-left: 10%; padding-top: 100px; margin-top: 150px;}
+.MKprd {width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.MKdescription {color: grey; line-height: 1.4;}
+#MKimage-product {width: 60%;}
+h4 {
+    color: grey;
+}
+#MKfooter {margin-top: 100px;
+            margin-bottom: 100px;
+        height: 240px;}
+
+
+#MKwrapper {
+    padding-top: 40px;
+    display: flex;
+    padding-left: 20%;
+}
+
+
+
+.MKheading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+#MKprd-wrapper {
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 300px;
+}
+
+.MKreviewtext {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    font-size: larger;
+}
+
+
+.JMbody {
+    background-color: #FBFFFB;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    color: black;
+}
+
+.JMDivCenter{
+    position: absolute;
+    left: 8%;
+    top: 0%;
+    right: 8%;
+    bottom: 0%;
+
+}
+
+.JMh1 {
+    text-align: center;
+}
+
+.JMP0 {
+    text-align: left; 
+    text-indent: 2em;
+}
+
+.JMDivTop {
+    background-color: #FBFFFB;
+position:fixed;
+left: 0%;
+right: 0%;
+width: 100%;
+height: 8%;
+padding: .5%;
+border-bottom: 2px solid black;
+
+}
+
+.JMDivMid {
+    margin-top: 10%;
+    float:left;
+    padding:2%;
+    Width: 100%;
+
+}
+
+.JMDivBot {
+    width: 100%;
+}
+
+.JMLogo {
+    position:fixed ;
+    left: 8%;
+    top: 0%;
+    height: 8%;
+
+}
+
+.JMbar {
+    position:absolute ;
+    left: 35%;
+    top: 40%;
+    height: 8%;  
+}
+
+.JMbarlinks {
+    position:absolute ;
+    left: 60%;
+    right: 0%;
+    top: 40%;
+    height: 8%;  
+}
+.JMa {
+   text-decoration: none; 
+   color: black;
+   margin-left: 20px;
+}
+
+.JMcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+.JMImage {
+    width: 60%;
+  }
+.JMimg {
+    width: 100%;
+}
+  
+  .JMtext {
+    font-size: 20px;
+    padding-left: 20px;
+    Width: 40%;
+    text-indent: 2em;
+  }
+
+  body
+{
+    background-color: #fbfffb;
+
+}
+
+
+.Signup-logo
+{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    animation: popup;
+    animation-duration: 2s;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.Signup-logo:hover 
+{
+    cursor: pointer;
+    
+}
+@keyframes popup
+{
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+.Signup-logo h1
+{
+    font-size: 35px;
+    position: relative;
+    text-align: center;
+    margin-top: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+.login-form /* Sign in background */
+{
+    position: absolute;
+    left: 45%;
+    right: 350;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    top: 30%;
+    background-color: white;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 0 0 0 1px black 0 0 0 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: popup;
+    animation-duration: 2s;
+    box-shadow: 2px 2px 2px 2px gray;
+    
+}
+
+
+.login-form #tt-label, #tt-signin, #tt-register
+{
+    padding-bottom: 10px;
+    display: block;
+    color: #727e74;
+    border-color: black;
+    position: relative;
+    left: 100px;
+    font-size: 18px;
+    bottom: -10px;
+    padding: 10px;
+
+    
+}
+.login-form #tt-input
+{
+    display: block;
+    color: #727e74;
+    border-color: black;
+    position: relative;
+    left: 100px;
+    font-size: 18px;
+    bottom: -10px;
+
+    
+}
+.login-form #DOB
+{
+    display: block;
+    color: #727e74;
+    border-color: black;
+    position: relative;
+    left: 100px;
+    font-size: 18px;
+    bottom: -10px;
+    z-index: 1;
+}
+.login-form #tt-register:hover
+{
+    position: relative;
+    cursor:pointer;
+    
+}
+.login-form #tt-signin:hover
+{
+    cursor: pointer;
+    color: #727e74;
+    background-color: #fbfffb;
+}
+.login-form #tt-input /* Input fields */
+{
+    width: 500px;
+    height: 40px;
+    border-radius: 15px;
+}
+.login-form #tt-signin
+{
+    z-index: 1;
+}
+.Alternative-signin
+{
+    position: relative;
+    margin-left: 100px;
+    padding-top: 10px;
+    z-index: 1;
+}
+.Alternative-signin img:hover
+{
+    height: 10%;
+}
+#alternative-Signin
+{
+    color: #fbfffb;
+    background-color: #727E74;
+    border-radius: 10px;
+    z-index: 1
+
+}
+#alternative-Signin:hover
+{
+    cursor: pointer;
+    color: #727e74;
+    background-color: #fbfffb;
+}
+#fth
+{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    margin-top: -10px;
+}
+label #DOB 
+{
+    border-radius: 10px;
+}
+#applegoogle:hover
+{
+    height: 50px;
+    width: 50px;
+}
+#TTfooter1, #TTfooter2
+{
+    position: absolute;
+    height: 450px;
+    left: 20%;
+}
+.ttwrapper-signin
+{
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 3px rgb(202, 202, 202); 
+    color: #727e74;
+    text-decoration: none;
+    line-height: 25px;
+    padding: 15px 50px 50px 50px;
+    width: 1180px;
+    height: 125px;
+    
+}
+#tt-ql
+{
+    text-decoration: none;
+    color: #727e74;
+}
+#tthr
+{
+    margin-top: 175px;
+    width: 1186px;
+}
+#tt-signature
+{   position: absolute;
+    width: 235px;
+    left: 750px;
+    color: #727E74;
+    margin-top: -50px;
+}
+#tt-signature-register
+{
+    color: #727E74;
+}
+.ttwrapper-register
+{
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 3px rgb(202, 202, 202); 
+    color: black;
+    text-decoration: none;
+    padding: 15px 50px 50px 50px;
+    width: 275px;
+    height: 200px;
+}
+
+.TT-Input {
+    display: block;
+    color: #727e74;
+    border-color: black;
+    border-radius: 10px;
+    position: relative;
+    width: 375px;
+    height: 30px;
+    padding: 15px;
+    left: 100px;
+    font-size: 18px;
+    bottom: -10px;
+}
+.tt-label {
+    margin-left: -10px;
+}
+.TTfooterdiv {
+    position: relative;
+    float:right; 
+    top:-75px;
+}
+#WD-signature {
+    position: absolute;
+    margin-top: -415px;
+    margin-left: 30px;
+}
+#TTfooter1 {
+    top: 665px;
+    width: 1000px;
+}
+#TTfooter2 {
+    top: 600px;
+    width: 400px;
+}
+

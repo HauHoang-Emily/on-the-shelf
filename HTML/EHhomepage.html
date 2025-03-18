@@ -1,0 +1,109 @@
+<html>
+<title> On The Shelf </title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+        .EHtop {
+            height: 135px;
+            width: 100%;
+            position: -webkit-sticky;
+            position: sticky;
+            margin-top: -135px;
+            top: 0;
+            z-index: 2;
+            background-color: white;
+            transition: box-shadow 0.3s ease-in-out;
+            padding: 0 163px;
+        }
+
+        .shadow {
+          box-shadow: 0 5px 7px -2px rgb(0 0 0 / 0.3);
+        }
+        
+        .EHmiddle-center1,
+        .EHmiddle-center2,
+        .EHbottom {
+            z-index: 1;
+            padding: 0 163px;
+            width:100%;
+        }
+
+        .reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.EHcontent {
+  animation: EHcontent 1s ease-in;
+}
+@keyframes EHcontent {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+<body>
+        <div class="EHtop">
+          <embed type="text/html" src="EHtop.html" height="135px" width="100%"/>
+      </div>
+      <div class="EHmiddle-center1">
+          <embed type="text/html" src="EHmiddlecenter1.html" height="673px" width="100%"/>
+      </div>
+      <div class="EHcontent reveal">
+          <div class="EHmiddle-center2">
+              <embed type="text/html" src="EHmiddlecenter2.html" height="1015px" width="100%"/>
+          </div>
+          <div class="EHbottom">
+              <embed type="text/html" src="EHbottom.html" height="380px" width="100%"/>
+          </div>
+      </div>
+        
+        <script>
+                  function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", reveal);
+
+      window.onscroll = function() {
+    var header = document.querySelector('.EHtop');
+    if (window.pageYOffset > 100) { 
+        header.style.position = 'absolute';
+        header.style.top = window.pageYOffset + 'px';
+    } else {
+        header.style.position = 'fixed';
+        header.style.top = '0';
+    }
+};
+
+window.onscroll = function() {
+    var topElement = document.querySelector('.EHtop');
+    if (window.pageYOffset > 0) {
+      topElement.classList.add('shadow');
+    } else {
+      topElement.classList.remove('shadow');
+    }
+  };
+
+        </script>
+</body>
+</html>

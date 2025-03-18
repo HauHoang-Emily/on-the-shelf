@@ -1,0 +1,202 @@
+<html>
+  <head>
+      <meta name="viewpoint" content="width=device-width, initial-scale=1">
+      <title>Contact Page</title>
+          <style>
+              body{
+                  padding:0;
+                  margin:0;
+                  box-sizing:border-box;
+                  outline:none;
+                  border:none;
+                  font-family:Georgia, 'Times New Roman', Times, serif;
+                  background-color:f6eadc;
+                  color:#727e74;
+                  overflow:hidden;
+              }
+  
+              .container{
+                  width:auto;
+                  margin:0 auto;
+              }
+  
+              nav{
+                  width: 100%;
+                  background-color: #fbfffb;
+                  padding:0.7rem 0;
+                  position:fixed;
+                  top:0;
+                  z-index:10;
+              }
+  
+              nav .container{
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+              }
+  
+              .search-bar{
+                  background-color:#fbfffb;
+                  border-radius:4 rem;
+                  padding:0.6rem 1rem;
+              }
+  
+              .search-bar input[type="search"]{
+                  background:transparent;
+                  width:30vw;
+                  margin-left:1 rem;
+                  font-size:0.9rem;
+                  color:antiquewhite
+              }
+  
+              nav.button{
+                 display:flex; 
+                 align-items:center;
+                 gap:2rem;
+              }
+  
+              .btn{
+                  display:inline-block;
+                  padding:0.6rem 2rem;
+                  font-weight: 500;
+                  border-radius: 2rem;
+                  cursor:pointer;
+                  color:#727e74;
+                  background-color: #fcf9f7;
+                  transition:all 300ms ease;
+              }
+  
+              .btn:hover{
+                  opacity:0.8;
+              }
+  
+              
+          </style>
+  </head>
+  <body>
+  <!--Header-->
+  <div class="EHtop">
+    <embed type="text/html" src="EHtop.html" height="135px" width="100%"/>
+</div>
+  </body>
+  </html>
+  <!--Effects the Body-->
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    font-family:Georgia,'Times New Roman',Times,serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 30px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  </style>
+  <link rel="stylesheet" href="../CSS/MIX.css">
+  </head>
+  <body>
+  <div class="container">
+    <div style="text-align:down-left">
+    <br><br>
+    <br><br>
+    <!--Titile of the Body-->
+      <h1>Contact Us</h1>
+      <p></p>
+    </div>
+     <div class="row">
+      <div class="column">
+        <img src="../images/logo3.png"/>
+      </div>
+    <div class="row">
+      <div class="column2" style="background-color:#aaa;">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <!--First Name-->
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          <!--Last Name-->
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          <!--Email-->
+          <label for="email"> E-mail</label>
+          <input type="text" id="email" name="email" placeholder="Your E-mail..." required>
+          <!--Country-->
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value=""></option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <!--Wrtining Section-->
+          <label for="subject">What's the Problem</label>
+          <textarea id="subject" name="subject" placeholder="Anything.." style="height:170px"></textarea>
+          <input type="submit" value="Submit" a href="">
+        </form>
+      </div>
+    </div>
+  </div>
+  <p id="WD-signature">This page was made by <b> William Davis </b></p>
+
+
+  </body>
+  
+
+  
+  </html>
+
+  

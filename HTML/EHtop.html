@@ -1,0 +1,118 @@
+<html>
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        #EHlogo {
+             height: 87px;
+             width: 183px;
+             float:left;
+             margin-top: 17px;
+        }
+        .EHsearch_container {
+            float: left;
+            width: 200px;
+            height: 30px;
+            color: #89695B;
+            text-align: left;
+            padding-left: 50px;
+        }
+        #EHbutton {
+                width: 31px;
+                height: 30px;
+                float:right;
+                position: relative; 
+                bottom: 30px; ; 
+                margin-left: 5px;
+                color:#89695B;
+                border-radius: 0 5px 5px 0;
+                
+                }
+
+        .EHinput {
+            width: 215px;
+            height: 30px;
+            color:#89695B;
+            padding: 10px;
+            border: 1px solid #89695B;
+            border-radius: 5px;
+            margin-left:-15px;
+                }
+
+                .EHinput a:hover {
+                background-color: #89695B;
+                color:white;
+                        }
+                .EHinput a.active, a.visited {
+                    background-color: #89695B;
+                    color: white;
+                        }
+
+                        .EHinput [type=text] {
+                            font-size: 17px;
+                            color: #89695B;
+                            border: none;
+                            }
+
+.EHleftnav .EHsearch_container button {
+  float: right;
+  background: #89695B;
+  border: none;
+  cursor: pointer;
+}
+
+.EHleftnav .EHsearch_container button:hover {
+  background: #E1B98C;
+}
+        .EHrightnav {
+            margin-right: 22px;
+        }
+
+        .EHrightnav a {
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            color: #727E74;
+            padding-top: 55px;
+            text-decoration: none;
+        }
+        .EHrightnav a:hover {
+            color:#E1B98C;
+        }
+
+        #EHelement4 {float:right;}
+        #EHelement2 {margin-left: 25px;float:left;}
+        #EHelement3 {margin-left: 25px;float:left;}
+        #EHelement1 {margin-left: 25px;float:left;}
+
+        #EHshopbag {
+            height:15px;
+            width:15px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="EHleftnav" style="width:33%; float: left;">
+            <a href="EHhomepage.html" target="_parent">
+                <img id="EHlogo" src="../Images/logo3.png">
+            </a>
+            <form class="EHsearch_container" style="margin-top:8px;">  <br> <br>  
+                <input type="text" class="EHinput" name="EHsearch" placeholder="Search.." required>
+                <button id="EHbutton" type="submit"> 
+                    <img src="../Images/lookup_icon.png" style="height:15px; width:15px; float:center;"> </button>
+             </form>
+        </div> 
+        <nav class="EHrightnav">
+            <div style="width:287px; float: right; margin-right: 290px;">
+        <a href="signin.html" id="EHelement1" target="_blank">  Sign In </a>
+        <a href="JMAboutPage.html" id="EHelement2" target="_blank">  About </a>
+        <a href="WD_index.html" id="EHelement3" target="_blank">  Contact Us </a>
+        <a href="#" id="EHelement4">  <img id="EHshopbag" src="../Images/shopping_bag.png" alt="Shopping Bag" onmouseover="this.src='../Images/shopping_bagHOVER.png'" onmouseout="this.src='../Images/shopping_bag.png'">
+        </div>
+    </nav> 
+</div>  
+</body>
+</html>
+
+
+

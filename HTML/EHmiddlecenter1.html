@@ -1,0 +1,179 @@
+<html>
+<head>
+    <style>
+        .EHcontainer {
+            position: fixed;
+            top: 150px;
+            animation: fadeIn 3s;
+            -webkit-animation: fadeIn 3s;
+            -moz-animation: fadeIn 3s;
+            -o-animation: fadeIn 3s;
+            -ms-animation: fadeIn 3s;
+        }
+        .EHfade-in-image {
+                    position: relative;
+                    display: block;
+                    width: 98%;
+                    height: 500px;
+                    margin-left: 1.55%;
+                    transition: opacity .5s ease;
+                    backface-visibility: hidden;
+        }
+        .EHlink {
+                text-decoration: none;
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                padding: 11px 0px 5px 17px;
+                border: 1px solid;
+                font-family: Helvetica;
+                font-weight: bold;
+                font-size: 15px;
+                color: #E1B98C;
+                background-color: white;
+                border: 2px solid;
+                border-radius: 5px;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1.5px 5px 0 rgba(0, 0, 0, 0.1);
+            }
+        .EHcontainer .EHlink:hover {
+                transform: scale(1.3);
+                background-color: ghostwhite;
+                color: #727E74;
+                border: none;
+                    }
+        #EHb1 {
+            position: absolute; 
+            top: 47.5%; left: -3px;
+        }
+        #EHb2 {
+            position: absolute; 
+            top: 47.5%; left: 1321px;
+        }
+        .EHline {
+           width: 1364px;
+           border:1px solid #89695B;
+           display:inline-block;
+           position: absolute;
+           top: 127.5px;
+        }
+        .EHinfo {
+          position: absolute;
+          top: 21%;
+          left: 17%;
+          font-family: Georgia;
+          color: ghostwhite;
+          font-size: 25px;
+        }
+        #EHtitle {
+            position: absolute;
+            width: 1000px;
+            text-align: center;
+            text-transform: uppercase;
+            z-index: 2;
+            transition: top .5s ease;
+            margin-left: -4.5%;
+            text-shadow: 2px 2px 5px black;
+                }
+        #EHtitle2Shadow {
+            z-index: 1; 
+            color: black;
+            transform: translate(-2px, -2px)
+                }
+        .EHp {
+          font-family: Georgia;
+          width: 1000px;
+          font-size: 24px;
+          margin-top: 125px;
+          margin-left: -4.5%;
+          text-align: center;
+        }
+        .EHinfo:hover #EHtitle,
+        .EHinfo:hover .EHp {
+            transform: translateY(-15px);
+            transition: transform 0.5s ease;
+        }
+
+        .EHbutton {
+          position: absolute;
+          width: 500px;
+          left: 21.3%;
+          top: 185px;
+          text-align: center;
+          opacity: 0.75;
+          transition: opacity .35s ease;
+        }
+
+        .EHbutton .EHlink {
+          width: 200px;
+          padding: 18px 30px 12px 30px;
+          text-align: center;
+          color: #727E74;
+          border: solid 2px #727E74;
+          opacity: 1;
+          z-index: 3;
+        }
+
+        .EHbutton:hover {
+          opacity: 1;
+        }
+        .EHbutton .EHlink:hover {
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
+          transition: box-shadow 0.3s ease-in-out, transform 0.3s ease; 
+          transform: translateY(-2px) scale(1.3); 
+        }
+                  
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+    </style>
+<body>
+    <div class="EHline"></div>
+    <div class="EHcontainer">
+        <img class="EHfade-in-image" src="../Images/bg2.png">
+            <div style="width:50%; float: left;">
+        <div id="EHb1"> <a class="EHlink" href="EHback_page.html"> <b> < </b> </a> </div>
+            <div style="width:50%; float: right;">
+        <div id="EHb2"> <a class="EHlink" href="EHnext_page.html"> <b> > </b> </a> </div> </div>
+    </div> 
+    <div class="EHinfo">
+        <h1 id="EHtitle"> A book can change your life </h1>
+        <p class="EHp"> Keep your good habit of reading books alive by reading day by day. </p>
+        <div class="EHbutton"> <a class="EHlink" href="#"> Get Your Own Book Now </a></div>
+    </div>
+    <script>
+      const button = document.querySelector('.EHbutton .EHlink');
+      const image = document.querySelector('.EHfade-in-image');
+  
+      button.addEventListener('mouseenter', () => {
+          image.style.opacity = 0.75;
+      });
+  
+      button.addEventListener('mouseleave', () => {
+          image.style.opacity = 1; 
+      });
+  </script>
+</body>
+</head>
+</html>

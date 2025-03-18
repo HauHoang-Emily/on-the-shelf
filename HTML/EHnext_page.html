@@ -1,0 +1,174 @@
+<html>
+<head>
+    <style>
+                .EHcontainer {
+            position: fixed;
+            top: 150px;
+            animation: fadeIn 3s;
+            -webkit-animation: fadeIn 3s;
+            -moz-animation: fadeIn 3s;
+            -o-animation: fadeIn 3s;
+            -ms-animation: fadeIn 3s;
+                            }
+                    .EHfade-in-image {
+                position: relative;
+                opacity: 1;
+                display: block;
+                height:500px;
+                width:98%;
+                margin-left:1.55%;
+                height: auto;
+                transition: .5s ease;
+                backface-visibility: hidden;
+                        }
+              #EHlink {
+                text-decoration: none;
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                padding: 11px 0px 5px 17px;
+                border: 1px solid;
+                font-family: Helvetica;
+                font-weight: bold;
+                font-size: 15px;
+                color: #E1B98C;
+                background-color: white;
+                border: 2px solid;
+                border-radius: 5px;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1.5px 5px 0 rgba(0, 0, 0, 0.1);
+            }
+            .EHcontainer #EHlink:hover {
+                transform: scale(1.3);
+                background-color: ghostwhite;
+                color: #727E74;
+                border: none;
+                    }
+                    .container:hover .EHfade-in-image {
+                            opacity: 0.75;
+                                         }
+                #EHb1 {
+            position: absolute; 
+            top: 47.5%; left: -3px;
+                }
+                .EHline {
+                  width: 1364px;
+                  border:1px solid #89695B;
+                  display:inline-block;
+                  position: absolute;
+                  top: 127.5px;
+                }
+                .EHinfo {
+                  position: absolute;
+                  top: 21%;
+                  left: 17%;
+                  font-family: Georgia;
+                }
+                #EHtitle1 {
+                  position: absolute;
+                  font-size: 100px;
+                  color: white;
+                  top: -60px;
+                  width: 900px;
+                  text-align: center;
+                  text-transform: uppercase;
+                  margin-left: 0.75%;
+                  text-shadow: 2px 2px 3px #555, -1px -1px 0px #ccc;
+                }
+                #EHtitle2 {
+                  position: absolute;
+                  font-size: 45px;
+                  color: #E1B98C;
+                  top: 107px;
+                  width: 900px;
+                  text-align: center;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  margin-left: 0.5%;
+                  z-index: 2;
+                  text-shadow: 2px 2px 4px black;
+                  animation: rollIn 2s ease-out forwards;
+                }
+                #EHtitle2Shadow {
+                  z-index: 1; 
+                  color: black;
+                  transform: translate(-2px, -2px)
+                }
+                .EHp {
+                  font-family: Georgia;
+                  color: white;
+                  width: 750px;
+                  font-size: 24px;
+                  margin-top: 217px;
+                  margin-left: 10%;
+                  text-align: center;
+                  line-height: 45px;
+                  overflow: hidden;
+                  clip-path: inset(0 100% 0 0);
+                  animation: rollIn 2s ease-out forwards;
+                  animation-delay: 1.5s; /* Starts before the title animation finishes */
+                }
+                
+                @keyframes colorChange {
+                0%, 100% {
+                  color: #727E74;
+                }
+                50% {
+                  color: #FFFFFF; 
+                }
+              }
+
+                @keyframes rollIn {
+              from {
+                clip-path: inset(0 100% 0 0); 
+              }
+              to {
+                clip-path: inset(0 0 0 0);
+              }
+            }
+
+              #EHtitle1 {
+                animation: colorChange 2s infinite; 
+              }
+
+                        
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+    </style>
+</head>
+    <body>
+        <div class="EHline"></div>
+        <div class="EHcontainer">
+        <img class="EHfade-in-image" src="../Images/bg3.png">
+            <div style="width:50%; float: left;">
+        <div id="EHb1"> <a id="EHlink" href="EHmiddlecenter1.html"> <b> < </b> </a> </div>   
+    </div>
+           <div class="EHinfo">
+          <h1 id="EHtitle1"> Holiday Sale! </h1>
+          <h1 id="EHtitle2"> All Used & Rare Books </h1>
+          <p class="EHp"> Explore a vast selection of first editions, signed copies, and rare books from the finest booksellers in the world. </p>
+      </div>
+</body>
+</html>

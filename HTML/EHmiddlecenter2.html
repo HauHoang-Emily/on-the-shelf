@@ -1,0 +1,312 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        #EHh02 {
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 17px;
+            color: #89695B;
+        }
+        .EHflex-container {
+                        display:flex;
+                        flex-wrap:nowrap;
+                        position: fixed;
+                        top: 108.5px; 
+                        left: 6.5%;
+         }
+         .EHflex-container>div {
+                        background-color:ghostwhite;
+                        width:100px;
+                        box-shadow: 0px 5px 10px gainsboro;
+                        margin:15px;
+                        text-align: center;
+                        line-height:100px;
+                        font-family: Georgia;
+                        font-weight: bold;
+                        font-size: 19px;
+                        color: #727E74;
+                        padding: 30px;
+                        }
+
+            .EHflex-container-content:hover {
+                text-decoration: none; 
+                color: inherit;
+                display: block;
+                transform: scale(0.85);
+                background-color: white;
+                cursor: pointer;
+                color: #89695B;
+                border: 5px solid #E1B98C;
+            } 
+            #EHh03 {
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 17px;
+            color: #89695B;
+            position: fixed;
+            top: 345px;
+        }
+        .EHbookcontainer {
+            margin-top: 23%;
+        }
+        .EHimg { 
+            height: 255px;
+            width: 190px;
+            float: left;
+            margin-right: 20px;
+        }
+        .EHinfo {
+            margin-left: 15px;
+        }
+
+        .EHbook1 {
+            position: absolute;
+            width: 475px;
+            height: 250px; 
+        }
+        .EHbook2 {
+            position: absolute;
+            margin-left: 448px;
+            width: 500px;
+            height: 250px; 
+        }
+
+        .EHbook3 {
+            position: absolute;
+            margin-left: 896px;
+            width: 375px;
+            height: v
+        }
+
+        .EHbook4 {
+            position: absolute;
+            margin-top: 225px;
+            width: 375px;
+            height: 250px; 
+        }
+        .EHbook5 {
+            position: absolute;
+            margin-top: 225px;
+            margin-left: 450px;
+            width: 375px;
+            height: 250px; 
+        }
+        .EHbook6 {
+            position: absolute;
+            margin-top: 225px;
+            margin-left: 896px;
+            width: 375px;
+            height: 250px; 
+        } 
+
+        .EHbookcontainer img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .EHtitle {
+            font-family: Georgia;
+            text-decoration: none;
+            line-height: 27px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #727E74;
+        }
+        .EHtitle:hover {
+            color: #E1B98C;
+        }
+
+        .EHprice {
+            font-family: Georgia;
+            font-size: 15px;
+            color: #727E74;
+        }
+        .checked {
+                color: #E1B98C;
+                 }
+        .unchecked {
+                color: gainsboro;
+                 }
+
+        #EHaddToCart {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #89695B;
+                text-align: center;
+                cursor: pointer;
+                font-size: 18px;
+                width: 115px;
+                font-family: Georgia;
+                font-size: 15px;
+              }
+              
+        #EHaddToCart:hover {
+                opacity: 0.7;
+              }
+        #EHview-more {
+            position: absolute;
+            margin-top: 192px;
+            margin-left: 1275px;
+            color: gainsboro;
+            font-family: Georgia;
+            font-size: 15px;
+            width: 100px;
+        }
+
+        #EHview-more:hover {
+            transform: scale(1.15);
+            cursor: pointer;
+            color: #E1B98C;
+        }
+        .EHflex-container-content2 {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            background-color: ghostwhite;
+            width: 100px;
+            box-shadow: 0px 5px 10px gainsboro;
+            margin: 15px;
+            text-align: center;
+            line-height: 100px;
+            font-family: Georgia;
+            font-weight: bold;
+            font-size: 19px;
+            color: #727E74;
+            padding: 30px;
+        }
+        .EHflex-container-content2:hover {
+            text-decoration: none; 
+                color: inherit;
+                display: block;
+                transform: scale(0.85);
+                background-color: white;
+                cursor: pointer;
+                color: #89695B;
+                border: 5px solid #E1B98C;
+            } 
+            .EHscroll-container {
+            display: flex;
+            overflow-x: hidden; 
+            white-space: nowrap;
+            -ms-overflow-style: none; 
+            scrollbar-width: none; 
+            }
+
+            .EHscroll-container::-webkit-scrollbar {
+                                            display: none; 
+                                            }
+            .EHbooks {
+                flex: 0 0 auto; 
+                width: 150px; 
+                margin: 10px;
+                background-color: #f0f0f0;
+                text-align: center;
+                }
+    </style>
+    </head>
+<body>
+<br> <br> 
+    <div class="EHcontent1">
+            <div id="EHh02" style="width:50%; float: left;">
+            <h2> Featured Categories </h2> </div>
+    </div>
+    <div class="EHflex-container">
+        <a href="ProductList.html" class="EHflex-container-content2" target="_blank">
+            RomComs
+        </a>
+        <div class="EHflex-container-content"> Horror </div>
+        <div class="EHflex-container-content"> Cuisine </div>
+        <div class="EHflex-container-content"> Arts </div>
+        <div class="EHflex-container-content"> Fiction </div>
+        <div class="EHflex-container-content"> Health </div>
+    </div>
+
+    <div class="EHbookcontainer">
+    <div id="EHh03" style="width:50%; float: left;">
+    <h2> Books Recommendation </h2> </div>
+    <div class="EHbook1">
+        <a href="Product.html" target="_blank"> <img class="EHimg" src="https://m.media-amazon.com/images/I/71YA7WWdT9L._SL1500_.jpg" alt=""> </a>
+            <div class="EHinfo"> 
+            <a class="EHtitle" href="Product.html" target="_blank"> Happily Never After </a>
+            <p class="EHprice"> $16.20 </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star unchecked"></span>
+            <p><button id="EHaddToCart"> Add to Cart </button></p>
+        </div>
+    </div>
+        <div class="EHbook2">
+        <a href="#"> <img class="EHimg" src="https://m.media-amazon.com/images/I/81t8rbmPtKL._SL1500_.jpg" alt=""> </a>
+                <div class="info"> 
+                <a class="EHtitle" href="#"> Mixed Signals </a>
+                <p class="EHprice"> $12.35 </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <p><button id="EHaddToCart"> Add to Cart </button></p>
+            </div>
+        </div>
+        <div class="EHbook3">
+        <a href="#"> <img class="EHimg" src="https://m.media-amazon.com/images/I/81h1a+Beq+L._SL1500_.jpg" alt=""> </a>
+                <div class="EHinfo"> 
+                <a class="EHtitle" href="#"> The Book of Fire </a>
+                <p class="EHprice"> $22.29 </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p><button id="EHaddToCart"> Add to Cart </button></p>
+            </div>
+        </div>
+        <br> <br> <br> <br>
+        <div class="EHbook4">
+        <a href="#"> <img  class="EHimg" src="https://m.media-amazon.com/images/I/71YXVmggZbL._SL1500_.jpg" alt=""> </a>
+                <div class="EHinfo"> 
+                <a class="EHtitle" href="#"> I've Got Your Number </a>
+                <p class="EHprice"> $13.88 </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <p><button id="EHaddToCart"> Add to Cart </button></p>
+            </div>
+        </div>
+        <div class="EHbook5">
+        <a href="#"> <img class="EHimg" src="https://m.media-amazon.com/images/I/711JTxvuCaL._SL1500_.jpg" alt=""> </a>
+                <div class="info"> 
+                <a class="EHtitle" href="#"> The High-Heeled Gardener </a>
+                <p class="EHprice"> $15.95 </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <p><button id="EHaddToCart"> Add to Cart </button></p>
+            </div>
+        </div>
+        <div class="EHbook6">
+        <a href="#"> <img class="EHimg" src="https://m.media-amazon.com/images/I/718LCtxZ2aL._SL1500_.jpg" alt=""> </a>
+            <div class="EHinfo">
+                <a class="EHtitle" href="#"> Charming Falls Apart </a>
+                <p class="EHprice"> $15.28 </p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+                <p><button id="EHaddToCart"> Add to Cart </button></p>
+            </div>
+        </div>
+        <div id="EHview-more"> <b> View More > </b> </div>
+    </div>
+  </body>
+</html>
